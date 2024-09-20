@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
+<!-- Incluir la cabecera -->
+<?php get_template_part('header'); ?>
+
 <body <?php body_class(); ?>>
 
     <main class="site-main overlay">
-        <div class="content-wrapper">
-            <div class="slider">
-                <!-- Incluir la cabecera -->
-                <?php get_template_part('header'); ?>
-                <!-- Incluir el contenido principal -->
-                <?php get_template_part('content'); ?>
-            </div>
-
-            <!-- Incluir la barra lateral -->
-        </div>
+        <header>
+            <h1><?php bloginfo('name'); ?></h1>
+            <nav>
+                <?php wp_nav_menu(array('theme_location' => 'menu-principal')); ?>
+            </nav>
+        </header>
+        <!-- Incluir el contenido principal -->
+        <?php get_template_part('content'); ?>
     </main>
 
     <!-- Incluir el pie de página -->

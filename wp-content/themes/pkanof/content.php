@@ -1,4 +1,7 @@
 <!-- contenido.php -->
 <section class="take-off">
     <?php get_template_part('components/take-off'); ?>
-</section><!-- contenido.php -->
+</section>
+<section class="b2b">
+    <?php get_template_part('components/b2b'); ?>
+</section>
