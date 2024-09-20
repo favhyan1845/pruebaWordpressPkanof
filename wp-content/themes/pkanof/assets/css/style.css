@@ -1,0 +1,10 @@
+html, header {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: black;
+}
+
+h1{
+    font-size: 20px;
+}
