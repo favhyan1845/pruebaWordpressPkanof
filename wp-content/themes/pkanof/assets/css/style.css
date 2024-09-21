@@ -3,6 +3,7 @@ html,body {
     font-optical-sizing: auto;
     font-style: normal;
     margin: 0;
+    max-width: 80rem;
 }
 
 /* Estilos del header */
@@ -10,12 +11,12 @@ header {
     display: flex;                
     justify-content: space-between;
     align-items: center;           
-    padding: 0 0.9rem;               
+    padding: 0 4rem;               
     height: 10vh;     
     color:#FFFFFF;
 }
 .overlay {
-    background-color: rgba(0, 0, 0, 0.75);  
+    background-color: rgb(25 24 33 / 79%);
 }
 
 header h1 {
@@ -51,7 +52,10 @@ nav ul li a:hover {
 
 .menu-item {
     margin: 0 15px; 
-    list-style-type: none;         
+    list-style-type: none;  
+    font-size: 0.9rem;    
+    line-height: 1.8rem;   
+    font-weight: 600;
 }
 
 .menu-item:hover {
@@ -65,36 +69,32 @@ nav ul li a:hover {
     width: 100%;
     padding: 1.3rem;
 }
-section.take-off {
-    padding-top: 5rem;
-}
+
 .site-main{
     background-image: url('../image/main-slider.png');
     background-size: cover;
-    padding: 3rem 15rem;
+    padding: 3rem 0rem;
 }
 
 .image-take-off {
     display: flex;                
     justify-content: center;      
     align-items: center;          
-    height: 80vh;         
+    height: 40vh;
+    width: 100%;         
 }
 .clouds{
     width: 100%;
 }
 .image-cloud-one {    
-    background-image: url('../image/cloud_1.png');
-    background-repeat: no-repeat;
     margin-top: -17rem;
-    text-align: start;
-    position: relative;                 /* Fija la imagen en su lugar */
-    top: 20%;                         /* Centra horizontalmente */
-    transform: translateX(-50%);    /* Corrige el centrado */
+    position: relative;                     
+    transform: translateX(-25rem);    
     transition: transform 0.1s; 
     width: 50%;
-    height: 25vw;
+    height: 17rem;
     float: left;
+    opacity: 0;
 }
 
 .image-cloud-one.visible {
@@ -102,15 +102,13 @@ section.take-off {
     transform: translateY(0);       /* Regresa a su posición original */
 }
 
-.image-cloud-two { 
-    background-image: url('../image/cloud_2.png');   
-    background-repeat: no-repeat;    
-    text-align: end;
-    width: 50%;
-    height: 25vw;    
-    transform: translateY(-50px);    
+.image-cloud-two {  
+    width: 50%;   
+    height: 4rem;
+    transform: translateY(-26rem);    
     transition: opacity 0.5s, transform 0.5s; 
     float: right;
+    opacity: 0;
 }
 
 .image-cloud-two.visible {
@@ -165,32 +163,32 @@ img {
     height: auto;                 
 }
 
-.b2b {
-    display: inline-block;
+.b2b, .airplane {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    margin-top: -23rem;             
+    align-items: baseline;
+    height: 50vh;
+    width: 60%;
+    padding: 0 20rem;
+}
+
+.b2b .title {
+    margin-bottom: 0.9rem;
+    font-size: 3rem;               
+    color: #FFFFFF;   
+}
+
+.b2b p {
+    margin-bottom: 0.6rem;
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    text-align: left;
 }
 
 .arrow-icon::before {
-    content: "→";                   /* Añadir la flecha */
-    margin-left: 10px;              /* Espacio entre el texto y la flecha */
+    content: "→";                 
+    margin-left: 10px;             
 }
-
-.title {
-    font-size: 3rem;                /* Tamaño de la fuente del título */
-    color: #FFFFFF;                   /* Color del título */
-}
-.b2b p{
-    font-size: 1.3rem;
-    color:#FFFFFF;
-}
-
 
 /* Estilos del footer */
 .site-footer {
