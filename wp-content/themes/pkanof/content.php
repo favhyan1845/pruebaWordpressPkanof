@@ -8,3 +8,6 @@
 <section class="airplane">
     <?php get_template_part('components/airplane'); ?>
 </section>
+<section class="isco-content">
+    <?php get_template_part('components/isco'); ?>
+</section>

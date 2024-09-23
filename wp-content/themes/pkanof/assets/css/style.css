@@ -368,7 +368,51 @@ height: 40px;
 }
 }
 
+.isco{
+    text-align: center;
+    padding-top: 10%;
+}
+.content-isco{
+    color:#FFFFFF;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-left: 18%;
+    padding-right: 18%;
 
+}
+.label-isco{
+    color:#F89485;
+
+}
+.comillas{    
+    text-align: left;
+    padding-left: 15%;
+    padding-top: 5%;
+}
+.isco-name{
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-align: right;
+    padding-right: 33%;
+    padding-top: 5%;
+}
+.isco-job{
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-align: right;
+    padding-right: 33%;
+}
+
+.vector_4{
+    margin-top: -83%;
+    margin-left: -2%;
+}
+.vector_5{
+        margin-top: -59%;
+        margin-left: 50%;
+}
 /* Estilos del footer */
 .site-footer {
     clear: both;

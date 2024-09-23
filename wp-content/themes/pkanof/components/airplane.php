@@ -148,6 +148,3 @@
         </tbody>
     </table>
 </div>
-<div class="isco">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/image/logo 2.png" />
-</div>
