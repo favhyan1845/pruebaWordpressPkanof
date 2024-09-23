@@ -16,7 +16,7 @@ header {
     color:#FFFFFF;
 }
 .overlay {
-    background-color: rgb(25 24 33 / 79%);
+    background-color: rgb(33 43 53);
 }
 
 header h1 {
@@ -163,7 +163,9 @@ img {
     height: auto;                 
 }
 
-.b2b, .airplane {
+/* b2b */
+
+.b2b {
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -190,6 +192,183 @@ img {
     margin-left: 10px;             
 }
 
+/* airplane */
+.airplane {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    height: 50vh;
+    width: 75%;
+    padding: 0 10rem;
+    color: #FFFFFF;
+}.container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el icono y el título */
+    gap: 0.6rem; /* Espacio entre el icono y el título */
+}
+
+.container img {
+    width: 3rem; /* Ajusta el tamaño del icono */
+    height: auto; /* Mantiene la proporción del icono */
+}
+
+.container h1 {
+    margin: 0; /* Elimina el margen predeterminado del h1 */
+    font-size: 3rem; /* Ajusta el tamaño del texto */
+    font-weight: 700;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between; 
+    gap: 0.6rem;
+    width: 100%;
+}
+
+.table-airplane {
+    width: 100%;
+}
+.time, .gate{
+    width: 20%;
+}
+.content-destination{
+    width: 60%;
+}
+.number-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.text-content {    
+    display: flex;
+    justify-content: space-between;
+    gap: 0.25rem;
+    width: 60%;
+    margin-left: 4%;
+}
+.number{
+    background: #ffffff1f;
+    opacity: 0.5;
+    padding: 4%;
+    font-size: 1.3rem;
+}
+
+.text-destination{
+    background: #ffffff1f;
+    padding: 2%;
+    font-size: 1.3rem;
+}
+
+.splitflap {
+    min-width: 14px;
+    height: 0px;
+    margin: 10px;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+}
+
+.center {    
+    position: absolute;
+    left: 18%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    top: 13%;
+}
+
+.top {
+position: relative;
+height: 50%;
+width: 100%;
+background: #fff;
+border-radius: 10px 10px 0 0;
+overflow: hidden;
+z-index: 0;
+}
+
+div {
+perspective: 500px;
+}
+
+.bottom {
+position: relative;
+height: 100%;
+width: 100%;
+margin-top: -50%;
+border-radius: 10px 10px 10px 10px;
+z-index: -1;
+background-color: black;
+background-image: linear-gradient(rgba(59, 182, 235, 0), #3BB6EB);
+transform-origin: center;
+display:none;
+}
+
+.nextHalf {
+position: relative;
+height: 50%;
+width: 100%;
+margin-top: -100%;
+overflow: hidden;
+border-radius: 10px 10px 0 0;
+z-index: 2;
+transform-origin: bottom;
+display:none;
+}
+
+.nextFull {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff1f;
+    margin-top: -50%;
+    /* border-radius: 10px 10px 10px 10px; */
+    z-index: -3;
+    height: 27px;
+    padding: 40%;
+
+}
+
+.flip1 {
+animation: flip1 ease-in 1;
+animation-duration: 1s;
+}
+
+.flip2 {
+    
+    background-color: #ffffff1f;
+animation: flip2 ease-out 1;
+animation-duration: 1s;
+height: 40px;
+}
+
+@keyframes flip1 {
+0% {
+    transform: rotateX(0deg);
+    background-color: #3BB6EB;
+}
+50% {
+    transform: rotateX(90deg);
+    background-color: black;
+}
+100% {
+    transform: rotateX(90deg);
+}
+}
+
+@keyframes flip2 {
+0% {
+    transform: rotateX(-90deg);
+}
+50% {
+    transform: rotateX(-90deg);
+}
+100% {
+    transform: rotateX(0deg);
+    background-color: #3BB6EB;
+}
+}
+
+
 /* Estilos del footer */
 .site-footer {
     clear: both;
@@ -199,3 +378,5 @@ img {
     padding: 1.3rem;
     margin-top: 1.3rem;
 }
+
+

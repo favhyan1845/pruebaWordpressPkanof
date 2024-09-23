@@ -14,3 +14,4 @@ document.addEventListener('scroll', function () {
     // Mueve la imagen en función de la posición de scroll
     imageCloud.style.transform = `translate(16%, ${-150 + scrollPosition * 0.1}%)`;
 });
+
